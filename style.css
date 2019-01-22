@@ -1,0 +1,282 @@
+/* navbar */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+/*_______body_______*/
+body {    
+    background-image: url("gvd.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* navbar1.2 */
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0px 5px 0px 0px;
+  border: 0;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu {
+  /* width: 75%; */
+  border-bottom: 5px solid #e64343;
+  font-family: Raleway, sans-serif;
+  margin: 0 auto;
+}
+
+/*__________1_________*/
+
+
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+    z-index: 2;
+  padding: 20px 25px 12px 25px;
+  font-size: 19px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #444444;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+  background: #e64343;
+}
+
+/*_________2__________*/
+/* 
+
+#cssmenu img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: right;
+    padding-top: 4px;
+    
+} */
+/* #cssmenu i:hover {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: right;
+    border: solid 1px #e64343;
+} */
+
+.cont1 img{
+    width: 134px;
+    height: 160px;
+    margin-top: -35px;
+    float: right;
+    overflow: hidden;
+    padding-right: 12px;
+}
+
+
+/* my special title */
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+body {
+  background-color: #222;
+}
+.plate {
+  width: 410px;
+float: left;
+margin-left: 13%;
+margin-top: -100px;
+}
+
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: rgb(85, 84, 84);
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+
+.bodytekstright{
+  position: absolute;
+  margin-left: 60%;
+  
+}
+
+.bodytekstright h1{
+  color: #e64343;
+}
+
+
+
+
+/* ---- Timeline ---- */
+ol {
+	position: relative;
+	display: block;
+	margin: 60px;
+	height: 4px;
+  background: #e64343;
+  width: 895px;
+}
+ol::before,
+ol::after {
+	content: "";
+	position: absolute;
+	top: -8px;
+	display: block;
+	width: 0;
+	height: 0;
+  border-radius: 10px;
+	border: 10px solid rgb(85, 84, 84);
+}
+ol::before {
+	left: -5px;
+}
+ol::after {
+	right: -10px;
+	border: 10px solid transparent;
+	border-right: 0;
+	border-left: 20px solid rgb(85, 84, 84);
+  border-radius: 3px;
+}
+
+/* ---- Timeline elements ---- */
+li {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 110px;
+	font: bold 13px arial;
+  height: 50px;
+  margin-bottom: 20px;
+}
+li .diplome {
+  position: absolute;
+  top: -47px;
+  left: 36%;
+  color: #000000;
+}
+li .point {
+	content: "";
+	top: -4px;
+	left: 43%;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border: 4px solid rgb(85, 84, 84);
+	border-radius: 10px;
+	background: #fff;
+  position: absolute;
+}
+li .description {
+  display: none;
+  background-color: rgb(85, 84, 84);
+  padding: 12px;
+  margin-top: 20px;
+  position: relative;
+  font-weight: normal;
+  z-index: 1;
+}
+.description::before {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #f4f4f4;
+  position: absolute;
+  top: -5px;
+  left: 43%;
+}
+
+/* ---- Hover effects ---- */
+li:hover {
+	cursor: pointer;
+  color: white ;
+}
+li:hover .description {
+  display: block;
+}
